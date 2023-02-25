@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #1BF1FF 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #1BF1FF 99.55%);
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+* {
+  scroll-behavior: smooth;
+}
+body{
+  background: var(--color-bg);
+}
+s
+
+.model__shadow{
+  clip-path: ellipse(60px 20px);
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 62px;
+  letter-spacing: -0.04em;
+}
+
+.gradient__text{
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buttonGr{
+  @apply px-6 py-2 text-primary bg-background hover:bg-gradient-to-r from-linearLeft to-linearRight hover:text-white transition duration-500 rounded-3xl
+}
+
+.gradient__bg{
+  @apply absolute rounded-[20px] bg-linearBackground 
+}
+
+.glass__bg{
+  @apply backdrop-blur bg-slate-500 border 
+}
+
+.gradient__border{
+  @apply bg-gradient-to-r from-linearLeft to-linearRight p-px
+}
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(49, 49, 49, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    backdrop-filter: blur(9.1px);
+    -webkit-backdrop-filter: blur(9.1px); */
