@@ -57,9 +57,7 @@ h1 {
 .gradient__border{
   @apply bg-gradient-to-r from-linearLeft to-linearRight p-px
 }
-.gradient__separation{
-  @apply bg-gradient-to-r from-linearLeft to-linearRight rounded-full
-}
+
 /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     background: rgba(49, 49, 49, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.34);
