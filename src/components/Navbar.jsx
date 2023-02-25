@@ -1,7 +1,8 @@
-import navLinks from "../constants/constants";
-import {HiMenuAlt3} from "react-icons/hi"
+import { navLinks } from "../constants/constants";
+import { HiMenuAlt3 } from "react-icons/hi"
 import { useState } from "react";
-import {RxCross2} from "react-icons/rx"
+import { RxCross2 } from "react-icons/rx"
+import styles from "../style";
 
 export default function Navbar() {
 
@@ -13,9 +14,9 @@ export default function Navbar() {
         {navLinks.map((navLink, index) => (
           <li
             key={navLink.id}
-            className="text-white text-mediumTxt hover:text-primary "
+            className={`${styles.textSize} text-white hover:text-primary`}
           >
-            <a href={navLink.id}>{navLink.title}</a>
+            <a href={`#${navLink.id}`}>{navLink.title}</a>
           </li>
         ))}
 
@@ -40,7 +41,7 @@ export default function Navbar() {
               key={navLink.id}
               className="text-white text-mediumTxt hover:text-primary "
               >
-                <a href={navLink.id}>{navLink.title}</a>
+                <a href={`#${navLink.id}`}>{navLink.title}</a>
               </li>
             ))}
             </ul>
