@@ -6,8 +6,6 @@ export default function Header() {
   return (
     <header className={`${styles.boxWidth} ${styles.fl}`}>
       <RadientBg 
-        width="300"
-        height="300"
         blur="blur-[120px]"
         top="-top-[5%]"
         left="-left-[5%]"

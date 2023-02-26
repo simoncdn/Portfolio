@@ -9,16 +9,17 @@ module.exports = {
         background: "#040C18",
         linearLeft: "#AE67FA",
         linearRight: "#1BF1FF",
+        grey: "#191919",
       },
       fontSize: {
         mediumTxt: "20",
       },
       screens: {
-        xs: "480px",
+        xs: "320px",
         ss: "620px",
         sm: "825px",
-        md: "1110px",
-        lg: "1200px",
+        md: "1024px",
+        lg: "1250px",
         xl: "1700px",
       },
       keyframes: {

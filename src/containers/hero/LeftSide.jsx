@@ -14,11 +14,14 @@ export default function LeftSide() {
         <p className={`${styles.textSize} text-primary mt-8 sm:w-[70%] w-[100%]`}  >Welcome ! My name is Simon, I'm front end developer located in France. I design and build website from scratch with love and passion.</p>
 
         <div className={`sm:w-[100%] sm:justify-start w-[100%] justify-center flex  ${styles.boxWidth} mt-[40px]`}>
-            <div className="gradient__border rounded-3xl">
-                <a href={resume} download="resume">
-                <Button label="Resume"/>
-                </a>
-            </div>
+            
+                  <Button label="Resume"
+                  paddingX={"px-6"}
+                  paddingY={"py-2"}
+                  lien={resume}
+                  file="resume"
+                  />
+
         </div>
 
     </div>

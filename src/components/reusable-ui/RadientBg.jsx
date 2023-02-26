@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function RadientBg({width, height, blur, top, left}) {
+export default function RadientBg({blur, top, left}) {
   return (
-    <div className={` absolute rounded-30px
-    sm:w-[${width}px] w-[${width / 2}px] 
-    sm:h-[${height}px] h-[${height / 2 }px]  
+    <div className={` absolute rounded-full
+    sm:w-[600px] w-[250px] 
+    sm:h-[600px] h-[250px]  
     ${blur} 
     ${top}
     ${left}

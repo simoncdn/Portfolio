@@ -19,7 +19,7 @@ export default function Technologies() {
         left="left-[25%]"
         />
 
-        <RadientSeparation width="w-[80px]" height="h-[8px]"/>
+        <RadientSeparation/>
         
         <h2 className= {` ${styles.subtitleSize} ${styles.marginYTitle} text-white text-bold]`}>Projects</h2>
 
