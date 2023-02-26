@@ -35,33 +35,52 @@ h1 {
   letter-spacing: -0.04em;
 }
 
+.rgb::after{
+  content: "";
+  background: linear-gradient(45deg,
+  #AE67FA 0%,
+  #1BF1FF 10%,
+  #AE67FA 20%,
+  #1BF1FF 30%,
+  #AE67FA 40%,
+  #1BF1FF 50%,
+  #AE67FA 60%,
+  #1BF1FF 70%,
+  #AE67FA 80%,
+  #1BF1FF 90%,
+  #AE67FA 100%)
+  repeat 0% 0% / 100% 100%;
+  position: absolute;
+  inset: -3px;
+  filter: blur(3px);
+  z-index: -1;
+  border-radius: 10px;
+  animation: rgbActive 6s linear infinite;
+  opacity: 1;
+}
+@keyframes rgbActive {
+  0% {background-position: 0% 50%};
+  50% {background-position: 100% 50%};
+  100% {background-position: 0% 50%};
+}
 .gradient__text{
   background: var(--gradient-text);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.buttonGr{
-  @apply px-6 py-2 text-primary bg-background hover:bg-gradient-to-r from-linearLeft to-linearRight hover:text-white transition duration-500 rounded-3xl
+.glass__bg{
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
 }
 
 .gradient__bg{
   @apply absolute rounded-[20px] bg-linearBackground 
 }
 
-.glass__bg{
-  @apply backdrop-blur bg-slate-500 border 
-}
 
 .gradient__border{
-  @apply bg-gradient-to-r from-linearLeft to-linearRight p-px
+  @apply bg-gradient-to-r from-linearLeft to-linearRight p-px 
 }
-.gradient__separation{
-  @apply bg-gradient-to-r from-linearLeft to-linearRight rounded-full
-}
-/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    background: rgba(49, 49, 49, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.34);
-    backdrop-filter: blur(9.1px);
-    -webkit-backdrop-filter: blur(9.1px); */
+

@@ -16,7 +16,7 @@ const styles = {
   marginX: "sm:mx-24 mx-6",
   marginY: "sm:my-16 my-6",
   marginYTitle: "sm:mt-12 sm:mb-6 mt-8 my-4",
-  marginYBloc: "ss:my-[120px]",
+  marginYBloc: "ss:mt-[120px] ss:mb-[0px] mt-[100px] mb-[100px]",
 
   textSize: "sm:text-lg md:text-xl text-base",
   subtitleSize: "sm:text-4xl md:text-6xl text-3xl",

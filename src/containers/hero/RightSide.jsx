@@ -1,13 +1,11 @@
 import model from "../../assets/3DModel.png"
 import shadow from "../../assets/shadowModel.svg"
-import styles from "../../style";
 
 export default function RightSide() {
   return (
     <div className={`md:col-span-5 sm:col-span-4 relative  flex flex-col  items-center `}>
 
         <div className="gradient__bg w-[50%] h-[100%] blur-[90px] animate-levitation"></div>
-        
         <img src={`${model}`} alt="3D Model" className="sm:w-[100%] w-[50%] relative  animate-levitation "/>
 
           
