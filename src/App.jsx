@@ -4,6 +4,7 @@ import Technologies from "./containers/technologies/Technologies";
 import Projects from "./containers/projects/Projects"
 import styles from "./style";
 import Contact from "./containers/contact/Contact";
+import Footer from "./containers/footer/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Technologies />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
