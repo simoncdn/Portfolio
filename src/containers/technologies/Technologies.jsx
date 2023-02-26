@@ -8,8 +8,6 @@ export default function Technologies() {
     <section id="technologies" className={`${styles.boxWidth} ${styles.padding} relative ${styles.marginY} `}>
         
         <RadientBg 
-        width="300"
-        height="300"
         blur="blur-[200px]"
         top="top-[50%]"
         left="-left-[35%]"
