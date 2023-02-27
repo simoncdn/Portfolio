@@ -9,7 +9,7 @@ const styles = {
     "font-title text-white md:text-4xl sm:text-3xl text-2xl text-bold relative",
   heading4:
     "font-title text-white md:text-3xl sm:text-2xl text-xl text-bold relative",
-  paragraph: "font-text text-primary sm:text-lg md:text-xl text-base relative",
+  paragraph: "font-text text-primary sm:text-base md:text-lg text-sm relative",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",

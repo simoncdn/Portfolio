@@ -45,3 +45,23 @@ body{
   50% {background-position: 100% 50%};
   100% {background-position: 0% 50%};
 }
+
+
+.toaster {
+  max-width: 300px;
+}
+.Toastify__progress-bar-theme--dark {
+  background: linear-gradient(to right, #AE67FA, #1BF1FF);
+}
+.Toastify__toast-theme--dark.Toastify__toast--success,
+.Toastify__toast-theme--dark.Toastify__toast--error {
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(49, 49, 49, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+}
+@media screen {
+  
+}

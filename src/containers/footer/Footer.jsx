@@ -10,13 +10,13 @@ export default function Footer() {
                 <a href={media.url} 
                 key={media.id}
                 target="_blank"
-                className='text-white text-3xl'
+                className='text-white sm:text-3xl text-xl'
                 >
                     {media.icon}
                 </a>
             ))}
         </div>
-        <p className='text-primary'>©Copyright 2023 - Cardona Simon</p>
+        <p className="text-primary sm:text-base text-xs">©Copyright 2023 - Cardona Simon</p>
     </footer>
   )
 }
