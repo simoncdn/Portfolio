@@ -1,6 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { RiDatabase2Line } from "react-icons/ri";
 import { FiFigma } from "react-icons/fi";
+import { BsLinkedin, BsGithub } from "react-icons/bs"
 import kasa from "../assets/Kasa.png";
 import crazeeBurger from "../assets/Crazee-burger.png"
 
@@ -60,5 +61,18 @@ export const projects = [
     stack:["React", "Context", "Styled-components"],
     code: "https://github.com/simoncdn/crazee-burger",
     source: "https://crazee-burger-brown.vercel.app/"
+  }
+]
+
+export const socialMedias = [
+  {
+    id: "linkedIn",
+    icon: <BsLinkedin />,
+    url: "https://www.linkedin.com/in/simoncdna/",
+  },
+  {
+    id: "github",
+    icon: <BsGithub />,
+    url: "https://github.com/simoncdn",
   }
 ]

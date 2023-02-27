@@ -1,11 +1,6 @@
 import styles from "../../style";
 import { projects } from "../../constants/constants"
-import RadientSeparation from "../../components/reusable-ui/RadientSeparation";
 import RadientBg from "../../components/reusable-ui/RadientBg";
-import Button from "../../components/reusable-ui/Button"
-import { useState } from "react";
-import Tilt from "react-parallax-tilt"
-import ProjectsButton from "../../components/reusable-ui/ProjectsButton";
 import Card from "../../components/reusable-ui/Card";
 
 export default function Technologies() {
@@ -19,9 +14,9 @@ export default function Technologies() {
         left="left-[25%]"
         />
 
-        <RadientSeparation/>
+        <div className={`${styles.gradientLine}`}></div>
         
-        <h2 className= {` ${styles.subtitleSize} ${styles.marginYTitle} text-white text-bold]`}>Projects</h2>
+        <h2 className= {` ${styles.heading2} ${styles.marginYTitle}`}>Projects</h2>
 
         <div className={`${styles.marginYBloc} flex md:items-start md:justify-center md:flex-row flex-col items-center gap-8 `}>
             {projects.map((project, index) => (

@@ -6,7 +6,7 @@ export default function Card({project}) {
   return (
     <div className={`${styles.flexCenter} flex-col md:w-[45%] ss:w-[70%] w-[100%] relative group`}>
 
-      <Tilt className="glass__bg  rounded-lg opacity-70 hover:opacity-100 transition duration-300 card">
+      <Tilt className={`${styles.glassBg} p-px glass__bg  rounded-lg opacity-70 hover:opacity-100 transition duration-300 card`}>
         <div
           className="
             group-hover:animate-pulse
@@ -27,7 +27,7 @@ export default function Card({project}) {
           bg-background
             relative flex flex-col justify-center items-center px-4 pb-8 pt-6  mt-1 rounded-b-lg"
         >
-          <h4 className="text-white text-3xl pb-4">{project.title}</h4>
+          <h4 className={`${styles.heading4} mb-4`}>{project.title}</h4>
 
           <div
             className="
@@ -38,12 +38,12 @@ export default function Card({project}) {
               bg-white opacity-30 rounded-full"
           ></div>
 
-          <p className={`${styles.textSize} py-4 text-primary`}>
+          <p className={`${styles.paragraph} py-4 `}>
             {project.description}
           </p>
 
           <div
-            className={`${styles.textSize} text-primary flex justify-center flex-col items-center w-full`}
+            className={`${styles.paragraph} flex justify-center flex-col items-center w-full`}
           >
             <span>Stack</span>
 
