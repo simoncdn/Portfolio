@@ -1,10 +1,15 @@
 const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
+  heading1:
+    "sm:text-5xl md:text-7xl text-4xl bg-gradient-to-r from-linearLeft to-linearRight bg-clip-text font-semibold text-transparent font-title",
   heading2:
-    "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
-  paragraph:
-    "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
+    "font-title text-white sm:text-4xl md:text-6xl text-3xl text-bold relative",
+  heading3:
+    "font-title text-white md:text-4xl sm:text-3xl text-2xl text-bold relative",
+  heading4:
+    "font-title text-white md:text-3xl sm:text-2xl text-xl text-bold relative",
+  paragraph: "font-text text-primary sm:text-lg md:text-xl text-base relative",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
@@ -18,19 +23,15 @@ const styles = {
   marginYTitle: "sm:mt-12 sm:mb-6 mt-8 my-4",
   marginYBloc: "ss:mt-[120px] ss:mb-[0px] mt-[100px] mb-[100px]",
 
-  textSize: "sm:text-lg md:text-xl text-base",
-  subtitleSize: "sm:text-4xl md:text-6xl text-3xl",
-  titleSize: "sm:text-5xl md:text-7xl text-4xl",
-};
+  gradientBtn:
+    "w-[80px] h-[36px] text-primary bg-background hover:bg-gradient-to-r from-linearLeft to-linearRight hover:text-white transition duration-500 relative rounded-3xl cursor-pointer font-text",
+  gradientBtnBg:
+    "w-[82px]  h-[38px] -right-[1px] -top-[1px] absolute rounded-3xl ",
+  gradientLine:
+    "sm:w-[80px] sm:h-[8px] w-[50px]h-[6px] rounded-full bg-gradient-to-r from-linearLeft to-linearRight",
 
-export const layout = {
-  section: `flex md:flex-row flex-col ${styles.paddingY}`,
-  sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
-
-  sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
-  sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
-
-  sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
+  glassBg:
+    "border border-solid border-slate-600 bg-transparent backdrop-blur-sm",
 };
 
 export default styles;

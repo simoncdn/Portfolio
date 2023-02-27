@@ -14,7 +14,7 @@ export default function Navbar() {
         {navLinks.map((navLink, index) => (
           <li
             key={navLink.id}
-            className={`${styles.textSize} text-white hover:text-primary`}
+            className={`${styles.paragraph} text-white hover:text-primary`}
           >
             <a href={`#${navLink.id}`}>{navLink.title}</a>
           </li>
@@ -32,7 +32,7 @@ export default function Navbar() {
         </button>
         
         
-        <div className={`${isOpen ? "flex" : "hidden"} p-1 absolute top-10 right-0 mx-4 my-2 min-w-[140px] rounded-xl animate-sidebar gradient__border z-20`}>
+        <div className={`${isOpen ? "flex" : "hidden"} absolute top-10 right-0 mx-4 my-2 min-w-[140px] rounded-xl animate-sidebar  bg-gradient-to-r from-linearLeft to-linearRight p-px  z-20`}>
 
 
             <ul className="sm:hidden flex flex-col justify-end items-start flex-1 gap-4 p-5 rounded-xl bg-background">

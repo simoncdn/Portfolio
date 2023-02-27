@@ -9,10 +9,10 @@ module.exports = {
         background: "#040C18",
         linearLeft: "#AE67FA",
         linearRight: "#1BF1FF",
-        grey: "#191919",
       },
-      fontSize: {
-        mediumTxt: "20",
+      fontFamily: {
+        title: "Roboto",
+        text: "Open sans",
       },
       screens: {
         xs: "320px",
